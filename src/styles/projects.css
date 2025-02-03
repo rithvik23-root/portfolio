@@ -1,0 +1,74 @@
+.project-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 80px auto;
+}
+.project-left {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px auto;
+}
+.project-image-container {
+  display: block;
+  width: 70%;
+  overflow: hidden;
+  background-color: #3216bb;
+  transition: 0.2s ease;
+}
+.project-image-container:hover {
+  width: 80%;
+  cursor: pointer;
+}
+
+.project-left .project-image {
+  float: right;
+}
+
+.project-image {
+  float: left;
+  max-width: 90%;
+  padding-top: 4.5rem;
+}
+
+.project-left .project-info {
+  align-items: flex-start;
+  margin-left: 2rem;
+}
+
+.project-info {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 2rem;
+}
+.learn-bt {
+  text-transform: uppercase;
+  background-color: none;
+  background: none;
+  border: none;
+  font-weight: 650;
+  font-size: 18px;
+  color: white;
+  letter-spacing: 2px;
+  border-bottom: 5px solid #ff4d5a;
+  transition: 0.3s ease-in-out;
+  width: 100%;
+  max-width: 500px;
+  padding: 15px;
+  font-size: 18px;
+  border-radius: 8px;
+}
+.learn-bt a {
+  color: white;
+  text-decoration: none;
+  width: 100%;
+}
+.learn-bt:hover {
+  background-color: #ff4d5a;
+}

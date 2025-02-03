@@ -1,0 +1,52 @@
+[
+  {
+    "name": "html",
+    "img": "/skills/html.png",
+    "alt": "html"
+  },
+  {
+    "name": "React",
+    "img": "/skills/react.png",
+    "alt": "html"
+  },
+  {
+    "name": "nodejs",
+    "img": "/skills/node.png",
+    "alt": "html"
+  },
+  {
+    "name": "java",
+    "img": "/skills/java.png",
+    "alt": "html"
+  },
+  {
+    "name": "springboot",
+    "img": "/skills/spring.png",
+    "alt": "html"
+  },
+  {
+    "name": "git",
+    "img": "/skills/git.png",
+    "alt": "html"
+  },
+  {
+    "name": "css",
+    "img": "/skills/css.png",
+    "alt": "html"
+  },
+  {
+    "name": "javascript",
+    "img": "/skills/javascript.png",
+    "alt": "html"
+  },
+  {
+    "name": "mysql",
+    "img": "/skills/mysql.png",
+    "alt": "html"
+  },
+  {
+    "name": "mongodb",
+    "img": "/skills/mongodb.png",
+    "alt": "html"
+  }
+]

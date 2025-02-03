@@ -1,0 +1,23 @@
+.footer {
+  position: sticky;
+  height: 6rem;
+  border-bottom: 1px solid #1a1a1a;
+  background-color: rgba(40, 40, 40, 0.95);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+  z-index: 99999999999;
+}
+.media {
+  padding-top: 10px;
+  text-align: center;
+}
+.git_img {
+  border-radius: 5px;
+}
+.namef {
+  padding-top: 10px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 13px;
+}

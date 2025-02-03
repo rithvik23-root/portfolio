@@ -1,0 +1,39 @@
+.contact-div{
+    margin-top: 6rem;
+    text-align: center;
+    
+}
+
+.form-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;                  
+    padding: 20px;               
+  }
+  input,.contact-bt, textarea {
+    
+    width: 100%;              
+    max-width: 500px;            
+    padding: 15px;              
+    font-size: 18px;             
+    border: 2px solid #ccc;
+    border-radius: 8px;          
+    box-sizing: border-box;
+  }
+  input:focus{
+    border: none;
+    outline: none;
+  }
+  textarea:focus{
+    border: none;
+    outline: none;
+  }
+  .contact-bt{
+    border: 1px solid #ccc;;
+  }
+  .stmsg{
+    text-transform: uppercase;
+    font-size: 20px;
+  }

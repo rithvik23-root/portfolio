@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Contact List Manager",
+    "img": "/projects/1.png",
+    "info": "A full-stack contact management application built with React, Node.js, and MongoDB, enabling users to add, edit, delete, and search contacts with a clean and responsive interface.",
+    "link": "https://github.com/rithvik23-root/contactsApp"
+  },
+  {
+    "name": "Movie Dux",
+    "img": "/projects/2.png",
+    "info": "A React-based movie app for seamless movie search and exploration, featuring real-time data and interactive UI.",
+    "link": "https://github.com/rithvik23-root/React_moviedux"
+  },
+  {
+    "name": "Bug Blaster",
+    "img": "/projects/3.png",
+    "info": "A React-based bug tracking platform where users can post, manage, and track software bugs with an intuitive and responsive interface.",
+    "link": "https://github.com/rithvik23-root/bug-blaster"
+  },
+  {
+    "name": "Go Foots!",
+    "img": "/projects/4.png",
+    "info": "A frontend e-commerce website built with HTML, CSS, and JavaScript, enabling users to browse and add shoes to their cart.",
+    "link": "https://github.com/rithvik23-root/goFoots"
+  }
+]
