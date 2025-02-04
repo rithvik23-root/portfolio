@@ -61,7 +61,7 @@ export default function ContactComponent() {
           value={formData.message}
           onChange={handleChange}
         ></textarea>
-        <button onClick={buttonSubmit} className="learn-bt">
+        <button onClick={buttonSubmit} className="learn-bt ct">
           Submit
         </button>
       </form>

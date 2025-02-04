@@ -2,16 +2,17 @@
   padding-top: 100px;
   text-align: center;
   border-bottom: 18px solid #ff4d5a;
-  width: 16rem;
-
+  width:fit-content;
+  font-size: 32px;
+  display: flex;
+  justify-content: center;
   margin: 0 auto;
-
   margin-bottom: 2rem;
 }
 .about_content {
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-start;
 }
 .about_profile {
   display: flex;
@@ -24,7 +25,7 @@
   justify-content: center;
   align-items: center;
   width: auto;
-  max-width: 300px;
+  max-width: 250px;
   height: auto;
   border-radius: 50%;
   overflow: hidden;
@@ -35,7 +36,7 @@
 .profile_para {
   text-align: center;
   margin-top: 10px;
-  font-size: 23px;
+  font-size: 20px;
   width: 100%;
   max-width: 500px;
   line-height: 1.8;
@@ -74,7 +75,7 @@
 .skills_item {
   opacity: 0;
   transform: translateX(200px);
-  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  transition: opacity 1s ease-out, transform 1s ease-out;
 }
 
 .skills_item.visible {
@@ -87,10 +88,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 90%;             /* Full width on smaller screens */
+  width: 75%;             /* Full width on smaller screens */
   max-width: 400px;       /* Limit width on larger screens */
   height: auto;
-  gap: 1rem;              /* Adjust spacing between elements */
   margin: 1rem auto; 
   overflow: hidden;
   border: double 3px transparent;
@@ -106,16 +106,18 @@
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 .skills_item img {
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
   transform: scale(0.5);
+  text-align: center;
 }
 .skill_name {
   font-weight: 650;
   letter-spacing: 1.5px;
-  font-size: 18px;
+  font-size: 14px;
   text-transform: uppercase;
   padding-bottom: 6px;
+  text-align: center;
 }
 @media(max-width:1024px){
   .skills_item{
@@ -132,14 +134,16 @@
   .skills_item {
     width: 95%;            /* Full width on small screens */
     max-width: none;        /* Remove max-width limit */
-    padding: 1rem;
+    /* padding: 1rem; */
+    gap: 2rem;
+    margin: 5px;
   }
   .profile_para{
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   .skill_name {
-    font-size: 3rem;        /* Adjust text size */
+    font-size: 1.5rem;        /* Adjust text size */
   }
 
   .skills_item img {

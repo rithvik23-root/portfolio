@@ -21,3 +21,11 @@
   letter-spacing: 1px;
   font-size: 13px;
 }
+@media(max-width:1200px){
+  .footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 12rem;
+  }
+}

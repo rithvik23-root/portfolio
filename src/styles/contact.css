@@ -12,9 +12,9 @@
     gap: 2rem;                  
     padding: 20px;               
   }
-  input,.contact-bt, textarea {
+  input, textarea {
     
-    width: 90%;              
+    width: 30%;              
     max-width: 500px;            
     padding: 15px;              
     font-size: 18px;             
@@ -22,6 +22,7 @@
     border-radius: 8px;          
     box-sizing: border-box;
   }
+  
   input:focus{
     border: none;
     outline: none;
@@ -30,10 +31,18 @@
     border: none;
     outline: none;
   }
-  .contact-bt{
-    border: 1px solid #ccc;;
+  .ct{
+    width: 20%;
   }
   .stmsg{
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 18px;
+  }
+  @media(max-width:600px){
+    input,textarea{
+      width: 60%;
+    }
+    .ct{
+      width: 60%;
+    }
   }

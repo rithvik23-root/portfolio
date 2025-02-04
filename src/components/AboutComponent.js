@@ -40,7 +40,7 @@ export default function AboutComponent() {
                 <SkillsCard
                   key={skillIndex}
                   skill={skill}
-                  delay={skillIndex * 1000}
+                  delay={skillIndex * 500}
                 />
               ))}
             </div>

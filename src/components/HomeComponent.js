@@ -51,7 +51,7 @@ export default function HomeComponent() {
     <div>
       <div className="main-home container-fluid" ref={homeRef}>
         <div className="abt">
-          <h1>
+          <h1 className="mainName">
             Hello, I'm <span className="name">Rithvik Arelli</span>
           </h1>
           <button className="heading-cta heading-bt" onClick={handleScroll}>
