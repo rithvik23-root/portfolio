@@ -1,8 +1,4 @@
 body {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
   background-color: #1a1a1a;
   font-family: montserrat, sans-serif;
   width: 100%;
@@ -95,5 +91,26 @@ body {
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@media (max-width:900px){
+  .nav{
+    padding-right: 0px;
+  }
+}
+@media(max-width:1200px){
+  html{
+    font-size: 60%;
+  }
+}
+@media(max-width:615px){
+  html{
+    font-size: 20%;
+  }
+}
+@media(max-width:615px){
+  html{
+    font-size: 20%;
   }
 }
