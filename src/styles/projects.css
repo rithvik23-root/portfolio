@@ -15,10 +15,12 @@
 .project-image-container {
   display: block;
   width: 90%;
-  max-width: 1000px;
+  max-width: 1100px;
+  height: auto;
   overflow: hidden;
   background-color: #3216bb;
   transition: 0.2s ease;
+  border-radius: 10px;
 }
 .project-image-container:hover {
   width: 80%;
@@ -47,7 +49,7 @@
   justify-content: center;
   align-items: flex-start;
   margin-left: 2rem;
-  font-size: 15px;
+  font-size: 16px;
 }
 .learn-bt {
   text-transform: uppercase;

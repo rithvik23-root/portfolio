@@ -1,12 +1,11 @@
-html, body {
+html,
+body {
   width: 100%;
   height: 100%;
   margin: 0;
   padding: 0;
-  overflow-x: hidden;  /* Prevent horizontal scrolling */
- 
+  overflow-x: hidden;
 }
-
 
 body {
   background-color: #1a1a1a;
@@ -29,7 +28,7 @@ body {
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
 }
 .item {
-  font-size: 25px;
+  font-size: 22px;
   font-weight: 350;
   color: white;
   letter-spacing: 2px;
@@ -52,9 +51,8 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  
 }
-.mainName{
+.mainName {
   font-size: 31px;
 }
 .name {
@@ -65,8 +63,6 @@ body {
   color: #fafafa;
   text-align: center;
   font-weight: 300;
-  
- 
 }
 .heading-cta {
   background-color: rgba(26, 26, 26, 0.6);
@@ -92,6 +88,7 @@ body {
 .abt-div {
   color: white;
   width: 90%;
+  zoom: 0.8;
 }
 @keyframes fadeBt {
   0% {
@@ -104,41 +101,38 @@ body {
   }
 }
 
-@media (max-width:900px){
-  .nav{
+@media (max-width: 900px) {
+  .nav {
     padding-right: 0px;
   }
-  .heading-cta{
+  .heading-cta {
     font-size: 2rem;
   }
 }
-@media(max-width:1200px){
-  html{
+@media (max-width: 1200px) {
+  html {
     font-size: 80%;
   }
 }
-@media(max-width:615px){
-  html{
+
+@media (max-width: 615px) {
+  html {
     font-size: 50%;
   }
 }
-@media(max-width:500px){
-  
-    .item{
-      font-size:15px;
-    }
-    .nav{
-      padding-right: 4rem;
-    }
-  
-}
-@media(max-width:380px){
-  
-  .item{
-    font-size:15px;
+@media (max-width: 500px) {
+  .item {
+    font-size: 15px;
   }
-  .nav{
+  .nav {
+    padding-right: 4rem;
+  }
+}
+@media (max-width: 380px) {
+  .item {
+    font-size: 15px;
+  }
+  .nav {
     padding-right: 2rem;
   }
-
 }

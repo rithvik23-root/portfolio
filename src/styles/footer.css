@@ -8,17 +8,27 @@
   z-index: 99999999999;
 }
 .media {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
   padding-top: 10px;
   text-align: center;
+  /* background-color: white; */
+  
 }
 .git_img {
   border-radius: 5px;
+  width: 35px;
+  height: auto;
+  background-color: white;
 }
 .namef {
   padding-top: 10px;
   text-transform: uppercase;
   text-align: center;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
   font-size: 13px;
 }
 @media(max-width:1200px){
