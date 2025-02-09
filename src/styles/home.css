@@ -54,6 +54,41 @@ body {
 }
 .mainName {
   font-size: 31px;
+  font-weight: 400;
+  animation-duration: 1.4s;
+  animation-timing-function: cubic-bezier(0.21, 1.11, 0.81, 0.99);
+  animation-name: moveInLeft;
+}
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.headingLine {
+  font-size: 37px;
+  background-color: rgba(26, 26, 26, 0.25);
+  animation-duration: 1.4s;
+  animation-timing-function: cubic-bezier(0.21, 1.11, 0.81, 0.99);
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+.headingLine {
+  animation-name: moveInRight;
+}
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 .name {
   color: #ff4d5a;

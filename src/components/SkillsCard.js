@@ -8,7 +8,7 @@ export default function SkillsCard({ skill, delay }) {
   useEffect(() => {
     const timer = setTimeout(() => {
       setVisible(true);
-    }, delay+200);
+    }, delay+500);
     return () => clearTimeout(timer);
   }, [delay]);
   return (

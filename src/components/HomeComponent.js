@@ -54,6 +54,7 @@ export default function HomeComponent() {
           <h1 className="mainName">
             Hello, I'm <span className="name">Rithvik Arelli</span>
           </h1>
+          <h2 className="headingLine">I'm a Software Developer.</h2>
           <button className="heading-cta heading-bt" onClick={handleScroll}>
             VIEW MY WORK
             <img
