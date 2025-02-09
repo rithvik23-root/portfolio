@@ -110,7 +110,9 @@ body {
   font-size: 1.5rem;
   font-weight: 400;
   cursor: pointer;
-  animation: fadeBt 1s ease-out forwards;
+  animation: fadeBt 0.7s 1.2s;
+  animation-fill-mode: backwards;
+  animation-timing-function: cubic-bezier(0.21, 1.11, 0.81, 0.99);
   transition: padding 0.2s ease-in-out;
 }
 .heading-bt:hover {
