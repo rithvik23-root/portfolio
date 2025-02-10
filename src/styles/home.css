@@ -121,6 +121,9 @@ body {
   animation-timing-function: cubic-bezier(0.21, 1.11, 0.81, 0.99);
   transition: padding 0.2s ease-in-out;
 }
+.abt-heading{
+  text-align: center;
+}
 .heading-bt:hover {
   padding-left: 60px;
   padding-right: 60px;
