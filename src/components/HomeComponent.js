@@ -1,4 +1,5 @@
 import React, { useEffect, useState, useRef, lazy, Suspense } from "react";
+import ParticleBackground from "./Motion";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/home.css";
 import ProjectsComponent from "./ProjectsComponent";
@@ -12,6 +13,7 @@ export default function HomeComponent() {
   const projRef = useRef(null);
   const contRef = useRef(null);
   const [isComponentVisible, setIsComponentVisible] = useState(false);
+  const [activeSection, setActiveSection]=useState();
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -34,6 +36,34 @@ export default function HomeComponent() {
       if (aboutRef.current) observer.unobserve(aboutRef.current);
     };
   }, []);
+
+  useEffect(()=>{
+    const observer =new IntersectionObserver(
+      (entries)=>{
+        entries.forEach((i)=>{
+          if(i.isIntersecting){
+            setActiveSection(i.target.getAttribute("data-section"))
+          }
+        })
+      },
+      {
+        threshold: 0.1,
+        rootMargin: "100px",
+      }
+    )
+
+    const sections = [aboutRef, projRef, contRef];
+    sections.forEach((ref) => {
+      if (ref.current) observer.observe(ref.current);
+    });
+    return () => {
+      // Clean up the observer
+      sections.forEach((ref) => {
+        if (ref.current) observer.unobserve(ref.current);
+      });
+    };
+
+  },[])
   const handleHomeScroll = () => {
     homeRef.current.scrollIntoView({ behavior: "smooth" });
   };
@@ -49,6 +79,7 @@ export default function HomeComponent() {
 
   return (
     <div>
+      <ParticleBackground></ParticleBackground>
       <div className="main-home container-fluid" ref={homeRef}>
         <div className="abt">
           <h1 className="mainName">
@@ -70,30 +101,30 @@ export default function HomeComponent() {
       <div className="navigation">
         <ul className="nav justify-content-end">
           <li className="nav-item">
-            <button className="nav-link item" onClick={handleHomeScroll}>
+            <button className= "nav-link item" onClick={handleHomeScroll}>
               Home
             </button>
           </li>
           <li className="nav-item">
-            <button className="nav-link item" onClick={handleScroll}>
+            <button className={`nav-link item ${activeSection==='About'?"active":""}`} onClick={handleScroll}>
               About
             </button>
           </li>
 
           <li className="nav-item">
-            <button className="nav-link item" onClick={handleProjScroll}>
+            <button className={`nav-link item ${activeSection==='Projects'?"active":""}`} onClick={handleProjScroll}>
               Projects
             </button>
           </li>
           <li className="nav-item">
-            <button className="nav-link item" onClick={handleContScroll}>
+            <button className={`nav-link item ${activeSection==='Contact'?"active":""}`} onClick={handleContScroll}>
               Contact
             </button>
           </li>
         </ul>
       </div>
 
-      <div className="abt-div container-fluid" ref={aboutRef}>
+      <div className="abt-div container-fluid" ref={aboutRef} data-section='About'>
         <h1 className="heading abt-heading">About</h1>
         {isComponentVisible ? (
           <Suspense fallback={<div className="emptyDiv"></div>}>
@@ -103,10 +134,10 @@ export default function HomeComponent() {
           <div className="emptyDiv"></div>
         )}
       </div>
-      <div className="abt-div container-fluid" ref={projRef}>
+      <div className="abt-div container-fluid" ref={projRef} data-section='Projects'>
         <ProjectsComponent></ProjectsComponent>
       </div>
-      <div className="abt-div container-fluid" ref={contRef}>
+      <div className="abt-div container-fluid" ref={contRef} data-section='Contact'>
         <ContactComponent></ContactComponent>
       </div>
 
